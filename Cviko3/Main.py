@@ -50,10 +50,12 @@ def main():
     def process(k, v):
         #Person Table
         global insertString, voice1, voice2
-        if k == 'Composer':
-            insertString = "INSERT STRING START"
+        if k == 'Print Number':
             voice1=""
             voice2=""
+            insertString = "INSERT STRING START"
+            insertString += "\nPrint Number:" + v
+        if k == 'Composer':
             for c in v.split(';'):
                 p = Person(conn, c.strip())
                 p.store()

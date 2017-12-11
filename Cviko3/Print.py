@@ -12,8 +12,10 @@ class Print( DBItem ):
         self.scoreId = None
         self.genre = None
         self.key = None
+        self.printNumber = None
 
         for line in string.split('\n'):
+            printNumber = re.match("Print Number:(.*)", line)
             partiture = re.match("Partiture:(.*)", line)
             year = re.match("Publication Year:(.*)", line)
             name = re.match("Edition:(.*)", line)
@@ -35,6 +37,8 @@ class Print( DBItem ):
                 self.year = year.group(1).strip()
             if name != None:
                 self.name = name.group(1).strip()
+            if printNumber != None:
+                self.printNumber = printNumber.group(1).strip()
 
         selectString = "Select id from score where "
         parameters = []
@@ -86,23 +90,11 @@ class Print( DBItem ):
             self.editionId = res[0]
 
     def fetch_id(self):
-        fetchQuery = "select id from print where "
-        fetchParam = []
-        if self.partiture == None:
-            fetchQuery += "partiture is null "
-        else:
-            fetchQuery += "partiture = ? "
-            fetchParam += [self.partiture]
-        if self.editionId == None:
-            fetchQuery += "and edition is null "
-        else:
-            fetchQuery += "and edition = ? "
-            fetchParam += [self.editionId]
-        self.cursor.execute(fetchQuery, (fetchParam))
+        self.cursor.execute("select id from print where id = ? ", (self.printNumber,))
         res = self.cursor.fetchone()
         if not res is None:
             self.id = res[0]
 
     def do_store(self):
         print("storing print")
-        self.cursor.execute("insert into print (partiture, edition) values (?, ?)", (self.partiture, self.editionId))
+        self.cursor.execute("insert into print (id, partiture, edition) values (?, ?, ?)", (self.printNumber, self.partiture, self.editionId))

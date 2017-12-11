@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d22ec510-6470-4439-b396-39e631f7ba15"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"67cce464-9217-45fe-ba21-1ba22db296c5":{"roots":{"references":[{"attributes":{},"id":"999abed1-c6a5-43f2-ba3e-5a260cae3c8a","type":"CategoricalScale"},{"attributes":{"plot":null,"text":""},"id":"cf07bd6c-492e-41af-a20e-1404a8a271b2","type":"Title"},{"attributes":{"source":{"id":"b4df05a5-749b-4503-9773-a2fc21e0407c","type":"ColumnDataSource"}},"id":"4569b37b-3afc-4c85-a675-e451613047df","type":"CDSView"},{"attributes":{"callback":null,"factors":["ODS","\u0158\u00e1d n\u00e1roda","CESTA ODPO","\u00c4\u015aSSD","Volte Prav","Radostn\u00e9 \u010c","STAN","KS\u00c4\u015aM","Zelen\u0102\u00ad","ROZUMN\u00cd - ","Spole\u010dnost","Svobodn\u0102\u00ad","Blok proti","Ob\u010dansk\u00e1 d","Pir\u0102\u02c7ti","OB\u010cAN\u00c9 201","Unie Hrdos","\u010cesk\u00e1 n\u00e1ro","Referendum","TOP 09","ANO","Dobr\u00e1 volb","Sdru\u017een\u00ed p","KDU-\u00c4\u015aSL","\u010cesk\u00e1 stra","REALIST\u00c9","SPORTOVCI","D\u011blnick\u00e1 s","SPD","Strana Pr\u00e1","N\u00e1rod Sob\u011b"]},"id":"e6494c71-2bc8-4051-b899-4996c7800ee1","type":"FactorRange"},{"attributes":{"callback":null},"id":"8c05399d-0b05-4bac-856a-1e1bd2d47de1","type":"DataRange1d"},{"attributes":{},"id":"7dfc181a-4fe6-4c06-a979-f8e8a93655a8","type":"LinearScale"},{"attributes":{"formatter":{"id":"f9f00500-9d61-488f-b8e4-f24cc6c54c35","type":"CategoricalTickFormatter"},"major_label_orientation":1,"plot":{"id":"605b2343-4203-4fd1-955f-3d53acc44b18","subtype":"Figure","type":"Plot"},"ticker":{"id":"03753e0a-f9d4-4209-af9b-c9a506399d77","type":"CategoricalTicker"}},"id":"d8ac1eef-c22d-4e0e-aee7-8ef75d086955","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"605b2343-4203-4fd1-955f-3d53acc44b18","subtype":"Figure","type":"Plot"},"ticker":{"id":"03753e0a-f9d4-4209-af9b-c9a506399d77","type":"CategoricalTicker"}},"id":"cf571326-b047-4707-965f-a2510e4e1b03","type":"Grid"},{"attributes":{"formatter":{"id":"ee1c0dfc-5f8f-4311-aa98-0c3e0e003e02","type":"BasicTickFormatter"},"plot":{"id":"605b2343-4203-4fd1-955f-3d53acc44b18","subtype":"Figure","type":"Plot"},"ticker":{"id":"40543092-c7d8-4c78-86a3-1d50fc89f06d","type":"BasicTicker"}},"id":"84ef70d7-867c-484c-8b97-41793d061d2f","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["x","top","fill_color"],"data":{"fill_color":["#2585d6","#84f569","#125013","#f38021","#3568a5","#262729","#74b9e8","#f12020","#60b34d","#7b1b72","#0b1121","#009682","#bcc65c","#2d2ff7","black","#80a32b","#556496","#757418","#55894b","#9a58d7","#3c2775","#ed15f1","#429f42","#c9ae2e","#3479bf","#44e2be","#9d1d03","#d002d0","#c03f2a","#56585a","#9b2f3f"],"top":[572962,8735,3758,368347,491,3852,262157,393100,74335,36528,438,79229,5077,8030,546393,359,436,117,4276,268811,1500113,3722,9857,293643,1573,35995,10593,10402,538574,18556,300],"x":["ODS","\u0158\u00e1d n\u00e1roda","CESTA ODPO","\u00c4\u015aSSD","Volte Prav","Radostn\u00e9 \u010c","STAN","KS\u00c4\u015aM","Zelen\u0102\u00ad","ROZUMN\u00cd - ","Spole\u010dnost","Svobodn\u0102\u00ad","Blok proti","Ob\u010dansk\u00e1 d","Pir\u0102\u02c7ti","OB\u010cAN\u00c9 201","Unie Hrdos","\u010cesk\u00e1 n\u00e1ro","Referendum","TOP 09","ANO","Dobr\u00e1 volb","Sdru\u017een\u00ed p","KDU-\u00c4\u015aSL","\u010cesk\u00e1 stra","REALIST\u00c9","SPORTOVCI","D\u011blnick\u00e1 s","SPD","Strana Pr\u00e1","N\u00e1rod Sob\u011b"]}},"id":"b4df05a5-749b-4503-9773-a2fc21e0407c","type":"ColumnDataSource"},{"attributes":{"fill_color":{"field":"fill_color"},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"e99b6652-2f2d-4343-80b6-5bdd04c06dc7","type":"VBar"},{"attributes":{"data_source":{"id":"b4df05a5-749b-4503-9773-a2fc21e0407c","type":"ColumnDataSource"},"glyph":{"id":"e99b6652-2f2d-4343-80b6-5bdd04c06dc7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6f17e36f-cbba-466a-a912-f441673eb00a","type":"VBar"},"selection_glyph":null,"view":{"id":"4569b37b-3afc-4c85-a675-e451613047df","type":"CDSView"}},"id":"e6f19f1f-6fc8-4757-880a-04560a747444","type":"GlyphRenderer"},{"attributes":{},"id":"03753e0a-f9d4-4209-af9b-c9a506399d77","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"605b2343-4203-4fd1-955f-3d53acc44b18","subtype":"Figure","type":"Plot"},"ticker":{"id":"40543092-c7d8-4c78-86a3-1d50fc89f06d","type":"BasicTicker"}},"id":"9c81462a-5cca-4888-a670-8337bedb6e04","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"6f17e36f-cbba-466a-a912-f441673eb00a","type":"VBar"},{"attributes":{},"id":"40543092-c7d8-4c78-86a3-1d50fc89f06d","type":"BasicTicker"},{"attributes":{},"id":"ee1c0dfc-5f8f-4311-aa98-0c3e0e003e02","type":"BasicTickFormatter"},{"attributes":{},"id":"84073d86-6da8-45cb-9673-02cb04362b96","type":"PanTool"},{"attributes":{},"id":"4bbb6cbb-ef57-448e-83b1-80bb5683f3fe","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"076556b5-10ff-40a7-85c3-2e045885c3a8","type":"BoxAnnotation"}},"id":"9aa2deea-2d60-41f3-8785-13b9b39cf710","type":"BoxZoomTool"},{"attributes":{},"id":"7a90b498-fb39-4108-856b-bc15cb51dc98","type":"SaveTool"},{"attributes":{},"id":"bf7e5f55-a762-4976-b43d-8dcafd6a31d1","type":"ResetTool"},{"attributes":{},"id":"91d3629b-af7a-41e9-a953-9cc6700c0ec4","type":"HelpTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"076556b5-10ff-40a7-85c3-2e045885c3a8","type":"BoxAnnotation"},{"attributes":{},"id":"f9f00500-9d61-488f-b8e4-f24cc6c54c35","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"84073d86-6da8-45cb-9673-02cb04362b96","type":"PanTool"},{"id":"4bbb6cbb-ef57-448e-83b1-80bb5683f3fe","type":"WheelZoomTool"},{"id":"9aa2deea-2d60-41f3-8785-13b9b39cf710","type":"BoxZoomTool"},{"id":"7a90b498-fb39-4108-856b-bc15cb51dc98","type":"SaveTool"},{"id":"bf7e5f55-a762-4976-b43d-8dcafd6a31d1","type":"ResetTool"},{"id":"91d3629b-af7a-41e9-a953-9cc6700c0ec4","type":"HelpTool"}]},"id":"4733c15b-a516-40b9-8cc8-a91dec67dc3d","type":"Toolbar"},{"attributes":{"below":[{"id":"d8ac1eef-c22d-4e0e-aee7-8ef75d086955","type":"CategoricalAxis"}],"left":[{"id":"84ef70d7-867c-484c-8b97-41793d061d2f","type":"LinearAxis"}],"renderers":[{"id":"d8ac1eef-c22d-4e0e-aee7-8ef75d086955","type":"CategoricalAxis"},{"id":"cf571326-b047-4707-965f-a2510e4e1b03","type":"Grid"},{"id":"84ef70d7-867c-484c-8b97-41793d061d2f","type":"LinearAxis"},{"id":"9c81462a-5cca-4888-a670-8337bedb6e04","type":"Grid"},{"id":"076556b5-10ff-40a7-85c3-2e045885c3a8","type":"BoxAnnotation"},{"id":"e6f19f1f-6fc8-4757-880a-04560a747444","type":"GlyphRenderer"}],"title":{"id":"cf07bd6c-492e-41af-a20e-1404a8a271b2","type":"Title"},"toolbar":{"id":"4733c15b-a516-40b9-8cc8-a91dec67dc3d","type":"Toolbar"},"x_range":{"id":"e6494c71-2bc8-4051-b899-4996c7800ee1","type":"FactorRange"},"x_scale":{"id":"999abed1-c6a5-43f2-ba3e-5a260cae3c8a","type":"CategoricalScale"},"y_range":{"id":"8c05399d-0b05-4bac-856a-1e1bd2d47de1","type":"DataRange1d"},"y_scale":{"id":"7dfc181a-4fe6-4c06-a979-f8e8a93655a8","type":"LinearScale"}},"id":"605b2343-4203-4fd1-955f-3d53acc44b18","subtype":"Figure","type":"Plot"}],"root_ids":["605b2343-4203-4fd1-955f-3d53acc44b18"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"67cce464-9217-45fe-ba21-1ba22db296c5","elementid":"d22ec510-6470-4439-b396-39e631f7ba15","modelid":"605b2343-4203-4fd1-955f-3d53acc44b18"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
